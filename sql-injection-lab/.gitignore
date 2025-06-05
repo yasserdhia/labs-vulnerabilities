@@ -1,0 +1,17 @@
+# ✅ تجاهل مجلدات node_modules
+backend/node_modules/
+frontend/node_modules/
+
+# ✅ تجاهل ملفات log
+*.log
+npm-debug.log*
+
+# ✅ تجاهل ملفات البيئة الحساسة
+.env
+.env.*
+
+# ✅ تجاهل ملفات النظام والمحررات
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
