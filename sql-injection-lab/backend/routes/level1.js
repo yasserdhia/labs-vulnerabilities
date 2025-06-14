@@ -4,7 +4,7 @@ const db = require('../db');
 
 router.post('/login', async (req, res) => {
   const { username, password } = req.body;
-  const query = `SELECT * FROM users WHERE username = '${username}' AND password = '${password}'`; // SQLi!
+  const query = `SELECT * FROM users WHERE username = '${username}' AND password = '${password}'`; // ⚠️ Vulnerable!
   try {
     const result = await db.query(query);
     if (result.rows.length > 0) {
